@@ -1,3 +1,10 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect, get_object_or_404
+from django.utils import timezone
 
-# Create your views here.
+def index(request):
+
+	
+
+	return render(request, 'map/index.html', 
+		{}
+		)
