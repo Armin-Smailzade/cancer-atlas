@@ -3,8 +3,18 @@ from django.utils import timezone
 
 def index(request):
 
-	
+	return render(request, 'map/landing/index.html', 
+		{}
+		)
 
-	return render(request, 'map/index.html', 
+def map(request):
+
+	return render(request, 'map/visuals/map.html', 
+		{}
+		)
+
+def chart(request):
+
+	return render(request, 'map/visuals/chart.html', 
 		{}
 		)
